@@ -1,0 +1,76 @@
+Test Document:
+
+There is a bug in the program where the number of swaps is set to 0 for Bubble,Insertion,and Selection Sorts 
+if those sorts are run consecutively. 
+Also BubbleSort's comparisons are shown to be the same as Insertion if run consecutively as well.
+Could not figure out why this bug keeps occurring.
+The other sorts run correctly regardless of order.
+
+If you check Bubble,Insertion or Selection Sorts by themselves the values for swaps/comparisons are shown correctly.
+
+
+Tested the Sorts on sizes 100,1000,and 10000.
+Compared the values against the expected Theoretical values below:
+
+W(N) = worst case
+B(N) = best case
+
+Insertion Sort:
+	W(N) = N^2
+	B(N) = N
+	Size 100: 99 Comparisons
+	Size 1000 1098 Comparisons
+	size 10000 11097 Comparisons
+	Insertion Sort performed pretty well on the random lists at just 
+	
+Selection Sort:
+	W(N) = N(N-1)/2 ~ O(N^2)
+	B(N) = N^2
+	Size 100: 4950
+	Size 1000: 504450 comparisons
+	Size 10000: 50499450 comparisons
+	Selection Sort performed as expected at about N^2 comparisons
+
+Bubble Sort
+	W(N) = N^2
+	B(N) = O(N)
+	Size 100: 7920 comparisons
+	Size 1000: 970956 comparisons
+	Size 10000: 99801072 comparisons
+	Bubble Sort performed just under the worst case scenario
+
+Quick Sort
+	W(N) = N^2
+	B(N) = NLogN
+	Size 100: 626 comparisons
+	Size 1000: 8968 comparisons
+	Size 10000: 110710 comparisons
+	Quick Sort performed really well at around the best case scenario
+	
+Merge Sort
+	W(N) = NLogN
+	B(N) = NLogN
+	Size 100: 544 comparisons
+	Size 1000: 8705 comparisons
+	Size 10000: 120203 comparisons
+	Merge Sort performed as expected around at around best case scenario
+Shell Sort
+	W(N) = N
+	B(N) = NLogN^2
+	Size 100: 342 comparisons
+	Size 1000: 5799 comparisons
+	Size 10000: 81042  comparisons
+	Shell Sort performed alright. Not at the best case scenario but nowhere near the worst case
+
+Radix Sort
+	W(N) = NK where K 
+	B(N) = NK
+	Size 100: 300 comparisons
+	Size 1000: 3300 comparisons
+	Size 10000: 33300  comparisons
+	Radix Sort performed as expected
+	
+	
+	
+	
+	
