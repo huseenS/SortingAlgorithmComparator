@@ -93,6 +93,14 @@ public class Gui extends JFrame implements ActionListener {
 	int[] a1000 = read("nums1000.txt");
 	int[] a10000 = read("nums10000.txt");
 	
+	
+	/*Too much repeated code below
+	 * To DO: Implement function to call sorts and Time
+	 */
+	public void callSortandTime() {
+		
+	}
+
 	//method when buttons are pressed, calls sorts and adds values to table
 	@Override 
 	public void actionPerformed(ActionEvent e) {
