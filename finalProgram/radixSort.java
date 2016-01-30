@@ -10,15 +10,6 @@ import java.util.Arrays;
  * Implements Radix Sort
  */
 public class radixSort {
-/**
-	 * @return the comparisonCount
-	 */
-	public int getComparisonCount() {
-		return comparisonCount;
-	}
-
-int comparisonCount = 0;
-
 	/**
 	 * @param toSort the unsorted Array
 	 * @return the sorted array
@@ -39,10 +30,8 @@ int comparisonCount = 0;
         //divide by 10 until max is less than 0
         while (m / exp > 0){
             int[] bucket = new int[10]; //temp bucket
-            
-            //count frequencies
+ 
             for (i = 0; i < n; i++) {
-            	 comparisonCount++;
                 bucket[(toSort[i] / exp) % 10]++;
             }
             
@@ -59,7 +48,6 @@ int comparisonCount = 0;
                 toSort[i] = b[i];
             exp *= 10;        
         }//end while
-		System.out.println("ComparisonCount " + comparisonCount);
 		System.out.println(Arrays.toString(toSort));
 		return toSort;
 		
